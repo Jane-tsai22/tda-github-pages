@@ -1,0 +1,122 @@
+body {
+    background-color: white;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    text-indent: 10px;
+}
+
+.row {
+    width: 100%;
+    margin-left: 0;
+}
+
+.col {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.marginAdd {
+    display: none;
+}
+
+.mirador-canvas-nav {
+    display: none !important;
+}
+
+#image_container {
+    width:100%;
+    overflow:auto;
+}
+
+#image_left {
+    float: left;
+    width: 50%;
+}
+
+#image_right {
+    float: left;
+    width: 50%;
+}
+.page-navigation {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 30px; 
+    padding: 10px 0;
+    width: 100%;
+}
+
+.nav-button {
+    text-decoration: none; 
+    padding: 10px 15px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: blue; 
+    transition: background-color 0.3s; 
+}
+
+
+.nav-button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+.nav-button2 {
+    text-decoration: none; 
+    padding: 10px 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: grey; 
+    transition: background-color 0.3s; 
+}
+
+
+
+
+.supraAdd {
+    vertical-align: super;
+    font-size: 0.75em; 
+
+}
+.metamark-below {
+    top:0.7em;
+    position: relative;
+    font-size: 0.9em; 
+}
+del {
+    color: gray;
+}
+.double-underline {
+    text-decoration: underline;
+    text-decoration-style: double;
+}
+.marginleft {
+    margin-left: 50px; 
+}
+.insertion-mark {
+    position: absolute; 
+    bottom: -1em;
+    left: 50%; 
+    transform: translateX(-50%);
+}
+.verse-line {
+    text-align: left; 
+}
+
+.right-align {
+    text-align: right
+}
+.indented-paragraph {
+    text-indent: 2em;
+}
+
+
