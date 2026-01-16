@@ -35,16 +35,14 @@
             <pb facs="#p25r"/>
             <metamark function="pagenumber"><num><hi rend="circled">83</hi></num></metamark>
             <p>
-               <l>believe that so great a good fortune<lb/>
-               <l>could have befallen me; but when<lb/>
+               <l>believe that so great a good fortune</l>
+               <l>could have befallen me; but when</l>
                <l>I 
                    <del type="crossedOut" hand="#PBS" rend="black ink">was</del>
                    <add hand="#PBS" place="supralinear">became</add>
                    assured that my enemy had</l>
                <l>indeed fled, I clapped my hands for</l>
-               <l>joy and ran down to Henry.</l><lb/>
-            </p>
-            <p>
+               <l>joy and ran down to Henry.</l>
                <l><hi rend="indented">We ascended into my room &amp; present</hi></l>
                <l>ly the servant brought breakfast:</l>
                <l>but I was unable to contain my-</l>
@@ -61,7 +59,7 @@
                   <add hand="#MWS" place="supralinear">on</add>
                   his</l>
                <l>arrival– but when <del type="crossedOut" hand="#MWS" rend="black ink">saw</del> he observed</l>
-               <l>me <add hand="#PBS" place="inline" rend="black ink"><metamark>^</metamark></add>
+               <l>me <add hand="#PBS" place="inline" rend="black ink"><metamark function="insertion">^</metamark></add>
                      <add hand="#PBS" place="supralinear">more attentively</add>
                      he saw a wildness in my eyes for</l>
                <l>which he could not account and</l>

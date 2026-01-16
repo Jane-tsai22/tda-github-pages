@@ -42,44 +42,83 @@
     </xsl:template>
     
     <xsl:template match="tei:div">
-        <div class="#MWS"><xsl:apply-templates/></div>
+        <div class="hand-MWS paragraph"><xsl:apply-templates/></div>
     </xsl:template>
     
-    <xsl:template match="tei:p">
-        <p><xsl:apply-templates/></p>
-    </xsl:template>
+
 
   <!-- processes the marginal additions again to give them a class to hide them in the 'main' text in css. By hiding them using css, they can also be made visible again when showing a reading text, for example-->
-    <xsl:template match="tei:add[@place = 'marginleft']">
-        <span class="marginAdd">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
+<xsl:template match="tei:add[@place = 'marginleft']" priority="1">
+    <span>
+        <xsl:attribute name="class">
+            <xsl:text>marginAdd</xsl:text>
+            <xsl:if test="@hand">
+                <xsl:text> hand-</xsl:text>
+                <xsl:value-of select="translate(@hand, '#', '')"/>
+            </xsl:if>
+        </xsl:attribute>
+        <xsl:apply-templates/>
+    </span>
+</xsl:template>
     <xsl:template match="tei:add[@place = 'above']">
-        <sup>
+        <sup><xsl:if test="@hand">
+                <xsl:attribute name="class">
+                    <xsl:text>sup hand-</xsl:text> <xsl:value-of select="translate(@hand, '#', '')"/>
+                </xsl:attribute>
+            </xsl:if>
+
             <xsl:apply-templates/>
         </sup>
     </xsl:template>
     
-    
-    <xsl:template match="tei:del">
-        <del>
-            <xsl:attribute name="class">
-                <xsl:value-of select="@hand"/>
-            </xsl:attribute>
-            <xsl:apply-templates/>
-        </del>
-    </xsl:template>
+
+
     
     <!-- all the supralinear additions are given in a span with the class supraAdd, make sure to put this class in superscript in the CSS file, -->
     <xsl:template match="tei:add[@place = 'supralinear']">
-        <span class="supraAdd">
+        <span>
+            <xsl:attribute name="class">
+                <xsl:text>supraAdd</xsl:text>
+            
+                <xsl:if test="@hand">
+                    <xsl:text> hand-</xsl:text>
+                    <xsl:value-of select="translate(@hand, '#', '')"/>
+                </xsl:if>
+            </xsl:attribute>
             <xsl:apply-templates/>
         </span>
     </xsl:template>
    
     
     <!-- add additional templates below, for example to transform the tei:lb in <br/> empty elements, tei:hi[@rend = 'sup'] in <sup> elements, the underlined text, additions with the attribute "overwritten" etc. -->
+ <xsl:template match="tei:add">
+    <add>
+        
+        <xsl:if test="@hand">
+            
+            <xsl:attribute name="class">
+                
+                <xsl:text>hand-</xsl:text>
+                
+                <xsl:value-of select="translate(@hand, '#', '')"/>
+                
+            </xsl:attribute>
+        </xsl:if>
+
+        <xsl:apply-templates/>
+    </add>
+</xsl:template>
+<xsl:template match="tei:del">
+    <del>
+        <xsl:if test="@hand">
+            <xsl:attribute name="class">
+                <xsl:text>hand-</xsl:text>
+                <xsl:value-of select="translate(@hand, '#', '')"/>
+            </xsl:attribute>
+        </xsl:if>
+        <xsl:apply-templates/>
+    </del>
+</xsl:template>
     <xsl:template match="tei:lb">
         <br/>
     </xsl:template>
@@ -134,12 +173,20 @@
             <xsl:apply-templates/>
         </span>
     </xsl:template>
-    <xsl:template match="tei:p[@rend = 'indent']">
-        <p class="indented-paragraph">
-            <xsl:apply-templates/>
-        </p>
-    </xsl:template>
-   
+<xsl:template match="tei:p">
+    <div>
+        <xsl:attribute name="class">
+            <xsl:text>hand-MWS paragraph</xsl:text>
+            
+            <xsl:if test="@rend = 'indent'">
+                <xsl:text> indented-paragraph</xsl:text>
+            </xsl:if>
+        </xsl:attribute>
+
+        <xsl:apply-templates/>
+    </div>
+</xsl:template>
+
 </xsl:stylesheet>
 <xsl:variable name="pageSequence">
         <page id="21r" file="21r.html"/>
