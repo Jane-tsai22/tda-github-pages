@@ -35,12 +35,13 @@ h1 {
     color: #2c3e50;
     font-family: 'Georgia', serif;
     margin-bottom: 20px;
+    background-color: #e2eef3;
 }
 .upper-panel {
-    background-color: #f5ead4;            
+    background-color: #f7f4ee;            
 }
 .lower-panel {
-    background-color: #f8e2b4;          
+    background-color:  #f7f4ee;          
 }
 #image_container {
     width: 80px; 
@@ -66,6 +67,7 @@ h1 {
 }
 
 .nav-button {
+    display: inline-block;
     text-decoration: none; 
     padding: 10px 15px;
     border: 1px solid blue;
@@ -73,6 +75,7 @@ h1 {
     color: #ffffff;
     background-color: blue; 
     transition: background-color 0.3s; 
+    margin: 10px 5px;
 }
 
 
@@ -81,6 +84,7 @@ h1 {
     border-color: #0056b3;
 }
 .nav-button2 {
+    display: inline-block;
     text-decoration: none; 
     padding: 10px 15px;
     border: 1px solid grey;
@@ -88,6 +92,7 @@ h1 {
     color: #ffffff;
     background-color: grey; 
     transition: background-color 0.3s; 
+    margin: 0 5px;
 }
 
 
@@ -151,6 +156,9 @@ del {
     margin: 20px;           
     display: inline-block;  
 }
+#stats{
+    background-color: #e2eef3;
+}
 .editorial-note {
     background-color: #fff3cd; 
     border: 1px solid #ffeeba;
@@ -163,9 +171,8 @@ del {
 }
 .circled {
     border: 2px solid #333;
-    border-radius: 100%;      /* 這會變成橢圓形 */
-    /* 或者改用 border-radius: 15px; 會變成圓角矩形 */
-    padding: 2px 8px;        /* 內部留點空間，字才不會貼在線上 */
+    border-radius: 100%;     
+    padding: 2px 8px;       
     display: inline-block;
 }
 .show-notes {
