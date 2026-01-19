@@ -145,46 +145,48 @@ function documentLoader() {
   
 // write another function that will toggle the display of the deletions by clicking on a button
 // EXTRA: write a function that will display the text as a reading text by clicking on a button or another dropdown list, meaning that all the deletions are removed and that the additions are shown inline (not in superscript)
-function highlightHands() {
-    // 抓取 Percy 的元素 (依賴 XSLT 產生的 class="hand-PBS")
-    var percyElements = document.getElementsByClassName('hand-PBS');
-    for (var i = 0; i < percyElements.length; i++) {
-        percyElements[i].classList.toggle('highlight-pbs');
-    }
-
-    // 抓取 Mary 的元素 (依賴 XSLT 產生的 class="hand-MWS")
-    var maryElements = document.getElementsByClassName('hand-MWS');
-    for (var i = 0; i < maryElements.length; i++) {
-        maryElements[i].classList.toggle('highlight-mws');
-    }
-}
 function toggleDeletions() {
-    // 假設你的刪除標籤是 <del>，如果是 span class="del" 請自行修改
+   
     var deletions = document.getElementsByTagName('del');
 
     for (var i = 0; i < deletions.length; i++) {
-        // 如果目前是隱藏 (none)，就顯示 (inline)
+      
         if (deletions[i].style.display === 'none') {
             deletions[i].style.display = 'inline';
         } else {
-            // 否則就隱藏
+
             deletions[i].style.display = 'none';
         }
     }
 }
+
 function toggleReadingText() {
-    // 1. 處理刪除內容：強制加上 'hide-content' class 來隱藏
+
     var deletions = document.getElementsByTagName('del');
     for (var i = 0; i < deletions.length; i++) {
-        // 使用 toggle 的第二個參數：true=強制加入, false=強制移除
-        // 這裡我們簡單做成切換開關，假設使用者是在「正常模式」與「閱讀模式」間切換
         deletions[i].classList.toggle('hide-content');
     }
 
-    // 2. 處理添加內容：讓它們變回正常行內文字
-    var additions = document.getElementsByTagName('add');
-    for (var i = 0; i < additions.length; i++) {
-        additions[i].classList.toggle('reading-mode-inline');
+
+    var supralinear = document.getElementsByClassName('supraAdd');
+    for (var i = 0; i < supralinear.length; i++) {
+        supralinear[i].classList.toggle('inline-text');
+    }
+
+
+    var marks = document.getElementsByClassName('metamark');
+    for (var i = 0; i < marks.length; i++) {
+        marks[i].classList.toggle('hide-metamark');
+    }
+}
+
+function toggleNotes() {
+    
+    var notes = document.getElementsByClassName('editorial-note');
+    
+    
+    for (var i = 0; i < notes.length; i++) {
+        notes[i].classList.toggle('show-notes');
     }
 }
 

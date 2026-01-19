@@ -52,13 +52,13 @@
                 
             <p>
                Unable
-               <add hand="#MWS"><metamark function="insertion">^</metamark></add>
-               <add place="supralinear" hand="#MWS">
+               <add hand="#MWS" rend="blackink"><metamark function="insertion">^</metamark></add>
+               <add place="supralinear" hand="#MWS" rend="blackink">
                    <hi rend="italic">to endure</hi>
                 </add>
                 the aspect of the
-                <del type="crossedOut" hand="#MWS">creature</del>
-                <add place="supralinear" hand="#PBS"> <hi rend="italic">being</hi></add> I<lb/> 
+                <del type="crossedOut" hand="#MWS" rend="blackink">creature</del>
+                <add place="supralinear" hand="#PBS" rend="blackink"> <hi rend="italic">being</hi></add> I<lb/> 
                 
                 had created, I rushed out of the room and<lb/>
                 <del type="crossedOut" hand="#MWS" rend="blackink">remained</del><add place="supralinear" hand="#PBS" rend="blackink"><hi rend="italic">continued</hi></add> a long time traversing my<lb/>
@@ -70,7 +70,7 @@
                 a <del type="crossedOut" hand="#MWS" rend="blackink">feew</del> few moments of forgetfullness.<lb/> 
                But it was in vain; I slept indeed but<lb/>
                 I was disturbed by the wildest dreams-<lb/>
-                I saw Elizabeth<add hand="#MWS"><metamark function="insertion">^</metamark></add><add place="supralinear" hand="#MWS" rend="blackink"><hi rend="italic">in the bloom of health</hi></add> walking in the streets of<lb/>
+                I saw Elizabeth<add hand="#MWS" rend="blackink"><metamark function="insertion">^</metamark></add><add place="supralinear" hand="#MWS" rend="blackink"><hi rend="italic">in the bloom of health</hi></add> walking in the streets of<lb/>
                 Ingolstadt; delighted &amp; surprised I embraced<lb/>
                 her but as I imprinted the first kiss<lb/>
                 on her lips they became lurid with<lb/>

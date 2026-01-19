@@ -47,7 +47,7 @@
         the grave worms crawling in the folds of<lb/>
         the flannel; I started<add hand="#MWS"><metamark function="insertion">^</metamark></add>
           <add place="infralinear" hand="#MWS" rend="blackink"><metamark></metamark></add>
-          <note>'^' is used as metamark, close visual resemblance</note>
+          <p><note type="editorial">'^' is used as metamark, close visual resemblance</note></p>
           <add place="supralinear" hand="#MWS" rend="blackink"><hi rend="italic">from my sleep</hi></add>
           with horror, a
         <lb/>
@@ -71,7 +71,7 @@
         beheld the wretch — the miserable<lb/>
         monster whom I had created;
           <add place="infralinear" hand="#MWS" rend="blackink"><metamark>-</metamark>
-            <note>'-'is used as metamark, a thick line is used</note>
+            <p><note type="editorial">'-'is used as metamark, a thick line is used</note></p>
           </add>
           he hel
           <del type="overwritten" hand="#MWS" rend="blackink"><!-- unclear char --></del>
@@ -79,7 +79,7 @@
         <lb/>
         up the curtain, 
           <add place="infralinear" hand="#MWS" rend="blackink"><metamark>-</metamark>
-            <note>'-'is used as metamark, a thick line is used</note>
+            <p><note type="editorial">'-'is used as metamark, a thick line is used</note></p>
           </add>
           and his eyes; if eyes
         <lb/>

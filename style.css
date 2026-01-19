@@ -31,9 +31,20 @@ p {
 .mirador-canvas-nav {
     display: none !important;
 }
-
+h1 {
+    color: #2c3e50;
+    font-family: 'Georgia', serif;
+    margin-bottom: 20px;
+}
+.upper-panel {
+    background-color: #f5ead4;            
+}
+.lower-panel {
+    background-color: #f8e2b4;          
+}
 #image_container {
-    width:100%;
+    width: 80px; 
+    height: 80px;
     overflow:auto;
 }
 
@@ -43,7 +54,7 @@ p {
 }
 
 #image_right {
-    float: left;
+    float: right;
     width: 50%;
 }
 .page-navigation {
@@ -114,16 +125,22 @@ del {
     text-indent: 2em;
 }
 
-
-.reading-mode-inline {
+.hide-content {
+    display: none !important; 
+}
+.hide-metamark {
+    display: none !important;
+}
+.inline-text {
     vertical-align: baseline !important; 
-    font-size: 1em !important;          
-    color: black !important;            
+    position: static !important;
+    top: auto !important;
+    font-size: 1em !important;           
     font-weight: normal !important;
+    color: black !important;
 }
 
 #folio {
-    
     border: 2px solid #333; 
     border-radius: 50%;    
     width: 60px;            
@@ -133,4 +150,24 @@ del {
     font-size: 24px;
     margin: 20px;           
     display: inline-block;  
+}
+.editorial-note {
+    background-color: #fff3cd; 
+    border: 1px solid #ffeeba;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    color: #856404;
+    margin: 0 5px;
+    display: none; 
+}
+.circled {
+    border: 2px solid #333;
+    border-radius: 100%;      /* 這會變成橢圓形 */
+    /* 或者改用 border-radius: 15px; 會變成圓角矩形 */
+    padding: 2px 8px;        /* 內部留點空間，字才不會貼在線上 */
+    display: inline-block;
+}
+.show-notes {
+    display: inline-block !important; 
 }

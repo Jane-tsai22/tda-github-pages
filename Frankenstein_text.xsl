@@ -139,8 +139,13 @@
     </xsl:template>
     
      
-    <xsl:template match="tei:hi[@rend = 'underline']">
+    <xsl:template match="tei:hi[@rend = 'u']">
         <span style="text-decoration: underline;">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+    <xsl:template match="tei:hi[@rend = 'circled']">
+        <span class="circled">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
@@ -153,10 +158,10 @@
         </p>
     </xsl:template>
     <xsl:template match="tei:metamark[@function='insertion']">
-        <span class="metamark-below">
+        <span class="metamark-below metamark">
             <xsl:apply-templates/>
         </span>
-    </xsl:template>   
+    </xsl:template> 
     <xsl:template match="tei:note">
     </xsl:template>
     <xsl:template match="tei:choice">
@@ -185,6 +190,13 @@
 
         <xsl:apply-templates/>
     </div>
+</xsl:template>
+<xsl:template match="tei:note">
+    <span class="editorial-note">
+        <xsl:text>[Note: </xsl:text>
+            <xsl:apply-templates/>
+        <xsl:text>]</xsl:text>
+    </span>
 </xsl:template>
 
 </xsl:stylesheet>

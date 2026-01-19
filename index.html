@@ -48,11 +48,11 @@
       
       <div class="row">
         <div class="col-5">   
-            <p>Welcome to the mini digital edition of Mary Shelley's <i>Frankenstein</i>. Made as a project for Text as Data II, taught at the University of Antwerp.</p>
-          <p>Give here some context about the manuscript and the assignment by writing directly into the html, for example:</p>
+            <p class="upper-panel">Welcome to the mini digital edition of Mary Shelley's <i>Frankenstein</i>. Made as a project for Text as Data II, taught at the University of Antwerp.</p>
+          <p class="upper-panel">Give here some context about the manuscript and the assignment by writing directly into the html, for example:</p>
           <ul>
-            <li>A photograph of Mary Shelley and Percy Shelley;</li>
-             <div class="image_container">
+            <li>Mary Shelley and Percy Shelley</li>
+             <div class="image_container" style="display: flex; gap: 10px; margin: 10px 0;">
                  <div id="image_left">
                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Mary_Wollstonecraft_Shelley_Rothwell.tif/lossy-page1-986px-Mary_Wollstonecraft_Shelley_Rothwell.tif.jpg" alt="Mary Shelley">
                  </div>
@@ -60,8 +60,8 @@
                      <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Percy_Bysshe_Shelley_by_Alfred_Clint.jpg" alt="Percy Shelley">
               </div>
             </div>
-            <li>A table/list with the pages in this digital edition;</li>
-            <ol>
+            <li>A list with the pages in this digital edition:</li>
+            <ol class="lower-panel">
               <li><a href="21r.html">21r</a></li>
               <li><a href="21v.html">21v</a></li>
               <li><a href="22r.html">22r</a></li>
@@ -73,19 +73,14 @@
               <li><a href="25r.html">25r</a></li>
               <li><a href="25v.html">25v</a></li>
             </ol>
-            <li>A link to the Bodleian Library (https://www.bodleian.ox.ac.uk/home)</li>
-            <a href="https://www.bodleian.ox.ac.uk/home">Bodleian Library</a>
-        
-            <li>A link to the Shelley Godwin Archive, on which this digital edition was based (http://shelleygodwinarchive.org/)</li>
-            <a href="http://shelleygodwinarchive.org/"> Shelley Godwin Archive</a>
-            <li>Your name!</li>
-            <li>The licence, including link: (https://creativecommons.org/licenses/by-nc/4.0/) </li>
-            <a href="https://creativecommons.org/licenses/by-nc/4.0/"> licence</a>
-            <li>A link to the encoding manual (https://bdmpmanual.uantwerpen.be/)</li>
-            <a href="https://bdmpmanual.uantwerpen.be/"> encoding manual</a> 
+            <li>A link to the Bodleian Library: <a href="https://www.bodleian.ox.ac.uk/home">Bodleian Library</a></li>
+            <li>A link to the Shelley Godwin Archive: <a href="http://shelleygodwinarchive.org/"> Shelley Godwin Archive</a></li>
+            <li>Editor: Hsing-Chuan, TSAI</li>
+            <li>Licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/"> licence</a></li>
+            <li>Encoding Manual: <a href="https://bdmpmanual.uantwerpen.be/"> encoding manual</a></li>   
           </ul>
           <p><b>Style all the pages the way you want by diving into the css file.</b></p>
-        <div class="col-7" id="text"></div>
+        <div class="col-7 " id="text"></div>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
